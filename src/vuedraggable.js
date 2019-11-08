@@ -1,4 +1,4 @@
-import { Sortable, MultiDrag } from "sortablejs";
+import Sortable, { MultiDrag } from "sortablejs";
 import { insertNodeAt, camelize, console, removeNode } from "./util/helper";
 
 if (MultiDrag && !MultiDrag.singleton) {
