@@ -1,7 +1,7 @@
 import { Sortable, MultiDrag } from "sortablejs";
 import { insertNodeAt, camelize, console, removeNode } from "./util/helper";
 
-if (!MultiDrag.singleton) {
+if (MultiDrag && !MultiDrag.singleton) {
   MultiDrag.singleton = new MultiDrag();
   Sortable.mount(MultiDrag.singleton);
 }
