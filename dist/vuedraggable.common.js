@@ -3735,7 +3735,7 @@ var draggableComponent = {
       var _this7 = this;
 
       evt.items.forEach(function (item, index) {
-        Object(helper["c" /* insertNodeAt */])(_this7.rootContainer, item, evt.oldIndex);
+        Object(helper["c" /* insertNodeAt */])(_this7.rootContainer, item, evt.oldIndicies[index].index);
       });
 
       if (evt.pullMode === "clone") {

@@ -510,7 +510,7 @@ const draggableComponent = {
 
     doDragRemoveList(evt) {
       evt.items.forEach((item, index) => {
-        insertNodeAt(this.rootContainer, item, evt.oldIndex);
+        insertNodeAt(this.rootContainer, item, evt.oldIndicies[index].index);
       });
       if (evt.pullMode === "clone") {
         removeNode(evt.clone);
