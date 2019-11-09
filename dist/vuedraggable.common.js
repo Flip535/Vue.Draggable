@@ -3734,6 +3734,10 @@ var draggableComponent = {
     doDragRemoveList: function doDragRemoveList(evt) {
       var _this7 = this;
 
+      evt.items.forEach(function (item, index) {
+        Object(helper["c" /* insertNodeAt */])(_this7.rootContainer, item, evt.oldIndex);
+      });
+
       if (evt.pullMode === "clone") {
         Object(helper["d" /* removeNode */])(evt.clone);
         return;
